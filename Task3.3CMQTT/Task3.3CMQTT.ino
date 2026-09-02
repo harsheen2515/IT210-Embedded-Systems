@@ -17,8 +17,8 @@ const int trigPin = 8;
 const int echoPin = 9;
 
 // Pins connected to the two LEDs
-const int redLED = 4;
-const int greenLED = 5;
+const int redLED = 4;   //Bathroom
+const int greenLED = 5;   //Hallway
 
 // MQTT connection setup
 WiFiClient wifiClient;

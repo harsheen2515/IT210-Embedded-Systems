@@ -1,0 +1,88 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff);
+    color: #1e293b;
+    padding: 50px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.room-control {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+    transition: 0.3s ease;
+}
+
+.room-control:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.15);
+}
+
+.room-control label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.room-control input {
+    appearance: none;
+    width: 48px;
+    height: 26px;
+    background: #cbd5e1;
+    border-radius: 20px;
+    margin-right: 18px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.room-control input::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.room-control input:checked {
+    background: #2563eb;
+}
+
+.room-control input:checked::before {
+    transform: translateX(20px);
+}
+
+.room-control input:focus {
+    outline: 3px solid rgba(37, 99, 235, 0.2);
+}

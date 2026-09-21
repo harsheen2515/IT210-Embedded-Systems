@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage display correctly on phones and laptops -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linda's Smart Light Control</title>
+
+    <!-- Connects this HTML page to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main heading for the carer's control page -->
+    <h1>Linda's Smart Room Light Control</h1>
+
+    <!-- Short explanation of what the page is used for -->
+    <p>Select a room to switch its light ON or OFF.</p>
+
+    <!-- Living room control -->
+    <div class="room-control">
+        <label>
+            <input type="checkbox" id="livingRoom">
+            Living Room
+        </label>
+    </div>
+
+    <!-- Bathroom control -->
+    <div class="room-control">
+        <label>
+            <input type="checkbox" id="bathroom">
+            Bathroom
+        </label>
+    </div>
+
+    <!-- Closet control -->
+    <div class="room-control">
+        <label>
+            <input type="checkbox" id="closet">
+            Closet
+        </label>
+    </div>
+
+    <!-- Connects the webpage to our JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
